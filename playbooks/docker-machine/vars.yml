@@ -26,5 +26,8 @@ rhss_autosubscribe: yes
 # updatehost: true
 
 #### software installation ####
+pip_install_packages:
+  - name: docker
+
 dockermachine_driver_kvm_enabled: yes
 

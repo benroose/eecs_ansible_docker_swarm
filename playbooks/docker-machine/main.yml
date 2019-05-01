@@ -1,7 +1,7 @@
 ---
-- hosts: dm-host
+- hosts: localhost
+  connection: localhost
   become: yes
-  # connection: local
   # gather_facts: false
 
   vars_files:
@@ -10,7 +10,9 @@
   roles:
     - geerlingguy.firewall
     - geerlingguy.ntp
-    - geerlingguy.repo-epel
+    # - geerlingguy.repo-epel
+    - geerlingguy.pip
+    - geerlingguy.docker
     - andrewrothstein.docker-machine
 
   tasks:
