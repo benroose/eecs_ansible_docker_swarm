@@ -1,7 +1,7 @@
 # docker swarm testing inventory
 
 [dm-host]
-vm-host2.cs.wichita.edu
+localhost
 
 [managers]
 
@@ -14,7 +14,6 @@ workers
 
 # Group - All infrastructure
 [infra:children]
-dm-host
 
 [infra:vars]
 ansible_ssh_user=ansible

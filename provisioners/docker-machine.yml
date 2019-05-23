@@ -1,6 +1,6 @@
 ---
 - hosts: dm-host
-  # connection: local
+  connection: local
   gather_facts: false
 
   vars:

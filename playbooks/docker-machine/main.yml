@@ -8,12 +8,13 @@
     - vars.yml
 
   roles:
-    - geerlingguy.firewall
-    - geerlingguy.ntp
-    # - geerlingguy.repo-epel
-    - geerlingguy.pip
-    - geerlingguy.docker
-    - andrewrothstein.docker-machine
+    # - geerlingguy.firewall
+    # - geerlingguy.ntp
+    - geerlingguy.repo-epel
+    # - geerlingguy.pip
+    # - geerlingguy.docker
+    - roles/ansible-role-vagrant
+    # - andrewrothstein.docker-machine
 
   tasks:
     # - include_tasks: tasks/rh_subscription_simple.yml

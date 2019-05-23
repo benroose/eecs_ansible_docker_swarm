@@ -1,6 +1,6 @@
 ---
 # Configure docker-machine host
-# - import_playbook: playbooks/docker-machine/main.yml
+# - import_playbook: confifure_dm_host.yml
 
 # Provision swarm nodes
 - import_playbook: provisioners/docker-machine.yml
